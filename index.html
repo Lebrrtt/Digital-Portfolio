@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f8ff;
+      color: #111;
+    }
+    header {
+      background-color: #0a2458;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #102f75;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0a2458;
+    }
+    .skill {
+      display: inline-block;
+      background: #0a2458;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #0a2458;
+      color: white;
+      margin-top: 20px;
+    }
+    details {
+      margin-top: 10px;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #0a2458;
+    }
+    .contact-info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace the src below with your actual image path or URL -->
+    <img src="https://avatars.githubusercontent.com/u/183594738?v=4">
+    <h1>John Libert Golo</h1>
+    <p>Assistant Programmer</p>
+  </header>
+
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <p>An aspiring front end developer driven to craft engaging and impactful web experiences, blending creativity with technical expertise in HTML, CSS, JavaScript, and modern frameworks. Known for turning complex problems into intuitive, user-friendly solutions, and thriving in collaborative environments.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">React</span>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <details open>
+      <summary>BS in Information Technology — STI West Negros University (2022–Present)</summary>
+      <p>Specialized in web and mobile application development, database management, and software engineering practices.</p>
+    </details>
+    <details>
+      <summary>Dean's List (2023 - 2nd Semester)</summary>
+    </details>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <details open>
+      <summary>Assistant Programmer — Eval-uSTIon (2025)</summary>
+      <p>Developed an automated student evaluation system with curriculum mapping and analytics dashboards.</p>
+    </details>
+    <details>
+      <summary>Customer Service Representative — Panasiatic Solutions (2019–2021)</summary>
+      <p>Helped customers by troubleshooting technical issues, providing step-by-step solutions, answering product-related questions, and guiding users through setup or repairs.</p>
+    </details>
+  </section>
+
+  <section id="contact" class="contact-info">
+    <h2>Contact</h2>
+    <p>📞 Phone: 0999-439-6361</p>
+    <p>📧 Email: jljpayumo@gmail.com</p>
+    <p>📍 Location: Brgy, Tangub, Bacolod City, Negros Occidental</p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> John Libert Golo
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
